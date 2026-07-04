@@ -1,13 +1,5 @@
 # kconsani.github.io
 
-Academic website for Caterina (Katia) Consani, built for GitHub Pages.
+GitHub Pages website for Caterina (Katia) Consani.
 
-The site uses MathJax for LaTeX mathematics. Inline math can be written as:
-
-\( \operatorname{Spec}\mathbb Z \)
-
-Displayed math can be written as:
-
-\[
-\mathcal M_p^\infty \subset p^{\mathbb Z}
-\]
+Upload all files in this folder to the repository `kconsani.github.io`.
