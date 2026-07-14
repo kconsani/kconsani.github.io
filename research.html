@@ -1,50 +1,161 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Research Overview | Katia Consani</title><link rel="stylesheet" href="css/style.css"><script>window.MathJax={tex:{inlineMath:[['\\(','\\)'],['$','$']],displayMath:[['\\[','\\]'],['$$','$$']]},svg:{fontCache:'global'}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head>
-<body><header class="site-header"><div class="container header-grid"><div class="brand">Caterina (Katia) Consani</div><nav class="nav"><a href="index.html">Home</a><a href="research.html">Research Overview</a><a href="timeline.html">Timeline</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="seminars.html">Seminars</a><a href="conferences.html">Conferences</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav></div></header>
-<main class="container">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Research Overview | Katia Consani</title><link rel="stylesheet" href="css/style.css">
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+    processEscapes: true
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head><body><header class="site-header"><div class="container header-grid"><div class="brand">Caterina (Katia) Consani</div><nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="timeline.html">Evolution</a>
+  <a href="publications.html">Publications</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="conferences.html">Conferences</a><a href="cv.html">CV</a>
+  <a href="contact.html"></a>
+  <a href="seminars.html"></a></nav></div></header><main class="container">
 <section class="card"><p class="eyebrow">Research</p><h1>Research Overview</h1>
-<p class="lead">My research is centered on the development of new geometric frameworks for arithmetic. A recurring theme is that many phenomena traditionally expressed in analytic or algebraic terms admit a deeper geometric interpretation once one enlarges the notion of space beyond the setting of classical algebraic geometry.</p>
-<p>This perspective has led to the introduction of several new geometric structures, including the Arithmetic Site, the Scaling Site, the Picard geometry of \(\operatorname{Spec}\mathbb Z\), and the recent absolute \(\mathbb F_1\)-geometry of \(\operatorname{Spec}\mathbb Z\). Together, these constructions form part of a long-term program aimed at extending geometric methods from function fields to arithmetic schemes and ultimately toward the Riemann Hypothesis.</p>
-<div class="math-box">\[ (\operatorname{Spec}\mathbb Z)_{\mathbb F_1},\qquad \operatorname{Pic}(\operatorname{Spec}\mathbb Z),\qquad \mathcal X_{C^\flat,\mathbf Q_p},\qquad E_p\simeq \mathbf C^\times/p^{\mathbf Z}. \]</div>
+<p>
+My research focuses on the development of new geometric methods in arithmetic.
+A recurring theme throughout this work is the search for a geometric framework
+capable of revealing the underlying geometric structure of the integers and of placing
+arithmetic phenomena within a broader geometric context.
+</p>
+<div class="question-box"><strong>Fundamental Question.</strong><br>What is the geometry of the prime numbers?</div>
+
+<p> This research program did not originate from a predetermined plan. Instead, it evolved through a succession of mathematical questions, each emerging naturally from the insights gained at the previous stage. Over time, this process led from the study of the arithmetic of the integral model of the Bost--Connes system and the first investigations in geometry over $\mathbf{F}_1$, to the construction of the Arithmetic Site and the Scaling Site, and eventually to the search for a characteristic-free geometry of \(\operatorname{Spec}\mathbf  Z\).</p>
+
+<p>Progress toward answering this fundamental question has required the introduction of new mathematical structures and ideas, often revealing that previously accepted frameworks represented only partial manifestations of a deeper geometric picture.</p>
+
+<p>This page offers a conceptual overview of this mathematical journey. </p>
+
+<p> Noncommutative arithmetic geometry emerged in the early 1990s with the introduction of the Bost-Connes
+quantum statistical dynamical system (commonly known as the BC-system). This system features the Riemann 
+zeta function as its partition function, while the zero-temperature vacuum states of the system realize 
+the global class field isomorphism for the rational number field \(\mathbf Q\).  <br>
+In a long-term collaboration with Alain Connes, we have uncovered new connections between the 
+BC-system, p-adic analysis, and the theory of Witt vectors. This work also led to the development of 
+an archimedean counterpart to the theory of rings of periods in p-adic Hodge theory. <br>
+Additionally, we  
+identified the arithmetic significance of the cyclic homology of schemes, which provides a set-up 
+to reinterpret Serre's archimedean factors of the Hasse-Weil L-function of a projective algebraic variety 
+over a number field as regularized determinants. <br>
+
+The study of the adele class space \(\mathbf Q^\times\backslash\mathbb A_{\mathbf Q}\) revealed a remarkable correspondence between its original analytic definition and a new algebro-geometric interpretation. To relate this space to the Riemann zeta function, attention is restricted to a specific sector \(X_{\mathbf Q}:=\mathbf Q^\times\backslash\mathbb A_{\mathbf Q}/\widehat{\mathbf Z}^\times\) of the adele class space (called Riemann
+sector), defined as the quotient of the adele class space by the maximal compact subgroup of the idele class group. 
+The algebro-geometric space, which describes set-theoretically this (noncommutative) double quotient, is the 
+Grothendieck topos \(\widehat{\mathbf N^\times_0}\). Its original definition—the Arithmetic Site—was defined as a topos over 
+the Boolean semifield \(\mathbf B\): the smallest idempotent semifield (also known as the smallest 
+semifield of characteristic one). This construction is synthesized in the  
+<a href="https://www.youtube.com/watch?v=FaGXxXuRhBI">talk of Alain Connes at IHES</a>
+, and in  <a href="https://www.youtube.com/watch?v=svWwxkryL3A">my talk at IHES 2015.</a>
+<br>  
+Extending scalars from \(\mathbf B\) to the multiplicative version of the tropical reals reveals a 
+second significant topos: the Scaling Site \(\mathscr S\). The points of the 
+topos \([0,\infty)\rtimes \mathbf N^\times\) underlying \(\mathscr S\) are in canonical bijection with the 
+adele classes of the Riemann sector \(X_{\mathbf Q}\). The structure sheaf \(\mathcal O\) of the Scaling Site is a \(\mathbf N^\times\)-equivariant sheaf of idempotent semirings of continuous convex functions valued in \(\mathbf R_{\text{max}}\).<br>
+A particularly important subspace of \(\mathscr S\), in relation to the rational primes, is defined by the collection (disjoint union) of the periodic orbits \(C_p\) of the scaling flow. These are the points of \([0,\infty)\rtimes \mathbf N^\times\) over the image of \(\operatorname{Spec}\mathbf Z\) inside \(\widehat{\mathbf N^\times}\) determined by the the geometric morphism of toposes 
+\[
+\Theta: \operatorname{Spec}\mathbf Z \longrightarrow \widehat{\mathbf N^\times_0}\subset \mathscr S.
+\]
+For each prime $p$ the corresponding circle \(C_p\) of length $\log p$ within \(\mathscr S\) is endowed with a quasi-tropical structure which turns this orbit into a variant $C_p=\mathbf{R}_{+}^\times / p^{\mathbf{Z}}$ of the classical Jacobi description $\mathbf{C}^\times / q^{\mathbf{Z}}$ of an elliptic curve. The structure sheaf $\mathcal{O}_p$ of $C_p$ is obtained by restriction of $\mathcal{O}$ to $C_p$ and its sections are periodic functions $f(p \lambda)=f(\lambda), \lambda \in \mathbf{R}_{+}^\times$, which are convex, piecewise affine and whose derivatives take values in the group $H_p \subset \mathbf{R}$ of rational numbers with denominators a power of $p$. <br>
+The geometric structure of the periodic orbits \(C_p\) is very rich: they admit a  theory of theta functions and Cartier divisors. One remarkable feature is that the degree of a divisor is a real number.  
+For a divisor $D$ on $C_p$ there is a corresponding Riemann-Roch problem with solution space $H^0(D)=H^0\left(C_p, \mathcal{O}(D)\right)$. We introduce the notion of continuous dimension $\operatorname{Dim}_{\mathbf{R}}\left(H^0(D)\right)$ of this $\mathbf{R}_{\text {max}}$-module using a limit of normalized topological dimensions and find that $\operatorname{Dim}_{\mathbf{R}}\left(H^0(D)\right)$ is a real number. The topological dimension used here is the Lebesgue covering dimension. The appearance of arbitrary positive real numbers as continuous dimensions of $\operatorname{Dim}_{\mathbf{R}}\left(H^0(D)\right)$ is due to the density in $\mathbf{R}$ of the subgroup $H_p \subset \mathbf{Q}$ and the fact that continuous dimensions are defined as limits
+of normalized dimensions $p^{-n} \operatorname{dim}_{\text {top }}\left(H^0(D)^{p^n}\right)$ where $H^0(D)^{p^n}$ is a natural filtration of $H^0(D)$ involving the $p$-adic norms of the derivatives. This is the characteristic 1 counterpart of the statement for matroid $C^*$-algebras and the type II normalized traces. The continuous dimensions which affect arbitrary positive real values appear when passing to the von Neumann algebra of type II obtained as the weak closure of the $C^*$-algebra using the trace to perform the completion. <br> Combining these results we obtain a Riemann-Roch formula (with real values) for the periodic orbits \(C_p\) that takes the form: 
+\[
+\operatorname{Dim}_{\mathbf{R}}\left(H^0(D)\right)-\operatorname{Dim}_{\mathbf{R}}\left(H^0(-D)\right)=\operatorname{deg}(D).
+\] 
+Both the Arithmetic Site and the Scaling Site 
+were originally defined over algebraic idempotent semi-structures. Consequently, this research also involved developing a general theory of homological algebra for categories such as the category of sheaves of 
+idempotent modules over a topos. A key example is the category of modules over the Boolean semifield, 
+viewed as the characteristic-one analog of the category of abelian groups. This research is described 
+in the <a href="https://journals.openedition.org/annuaire-cdf/12778">
+Course of Alain Connes at College de France 2015-16</a>, and in 
+<a href="http://www.math.jhu.edu/~kc/papers/Consani-Fudan2017.mp4">my talk at the 
+Conference in honor of Alain Connes 70th Birthday at Fundan University</a>. <br>
+
+Given the lack of a direct link between the ring of the integers \(\mathbf Z\) and \(\mathbf B\), 
+this research naturally expanded to include  the study of a categorical framework of modules and algebras over a basic
+categorical object. In modern algebraic K-theory and topological Hochschild homology, it is a well-established paradigm that the fundamental base ring for arithmetic is not \(\mathbf Z\), rather the sphere spectrum \(\mathbb{S}\). However, to construct a concrete spatial object—one possessing well-defined local points, stalks, and moduli spaces—one requires a strict, combinatorial incarnation of this stable homotopy theory that can be  integrated into the framework of Grothendieck toposes. We write this basic functorial object as \(\mathbf F_1\).  
+Our proposed base \(\mathbf F_1\) is therefore the spherical algebra of the pointed monoid \(\{0,1\}\), serving as the strict combinatorial model for the sphere spectrum, and our \(\mathbf F_1\)-algebras correspond to Segal's \(\Gamma\)-rings. This approach, rooted in the theory of 
+Segal's \(\Gamma\)-sets and offers the important advantage of providing a characteristic-free (a.k.a. absolute), unified perspective on the geometry of the 
+rational primes and the topos-theoretic description of the  sector \(X_{\mathbf Q}\). <br>
+This development has produced in Arakelov geometry a relevant advancement, following the idea that the (Arakelov) compactification of \(\operatorname{Spec}\mathbf Z\) is a curve 
+over the absolute ring \(\mathbf F_1[\pm 1]\). We obtained the Riemann-Roch formula ($D=$ Arakelov divisor on $\overline{\operatorname{Spec} \mathbf{Z}}$):
+\[
+\operatorname{dim}_{\mathbf{F}_1} H^0(D)-\operatorname{dim}_{\mathbf F_1} H^1(D)=\left\lceil\operatorname{deg}_2 D\right\rceil^{\prime}+1 .
+\]
+(\(\lceil x\rceil^{\prime}\) denotes the right continuous function which agrees with the function ceiling \((x)\) for \(x>0\) non-integer, and with-ceiling \((-x)\) for \(x<0\) non-integer). The proof views \(\mathbf Z\) as a ring of polynomials over \(\mathbf F_1\) with generator \(-2\).  This Riemann-Roch formula for the absolute curve $\overline{\operatorname{Spec} \mathbf{Z}}$ displays a perfect analogy with the Riemann-Roch formula holding for curves of genus \(0\).
+The canonical divisor \(K=-2\{2\}\) has integral degree \(\operatorname{deg}_2(K)=-2\).
+The results of this research are reported in the articles:  <a href="https://arxiv.org/pdf/2306.00456.pdf" target="_blank" rel="noopener">Riemann-Roch for the ring \(\mathbf Z\)</a>, and <a href="https://arxiv.org/pdf/2307.06748.pdf" target="_blank" rel="noopener">On the metaphysics of \(\mathbf F_1\)</a>.<br>
+Just as Grothendieck's theory of the étale fundamental group extends Galois theory to schemes, 
+the adele class space, viewed as a covering of the Scaling topos, provides a corresponding extension 
+of the class field isomorphism for \(\mathbf Q\) to schemes related to Spec \(\mathbf Z\). 
+The Scaling topos and its periodic orbits \(C_p\)  provide a geometric framework 
+for the well-established analogy between primes and knots. In this framework, the adele class space 
+naturally functions as the maximal abelian cover of the Scaling topos. The preimage of a periodic orbit \(C_p\) 
+in this cover is canonically isomorphic to the mapping torus of the the multiplication by the 
+geometric Frobenius at p  in the abelianized étale fundamental group of the spectrum of the local ring
+\(\mathbf Z_{(p)}\). This construction reveals how the prime $p$ is linked to every other rational prime. 
+The details of this development are contained in the paper <a href="https://arxiv.org/pdf/2501.06560" target="_blank" rel="noopener">Knots, primes and class ﬁeld theory</a>.<br>
+
+In a natural continuation of the geometric interpretation of the adele class space of the rationals, 
+the recent preprint <a href="https://arxiv.org/pdf/2602.15941" target="_blank" rel="noopener">On the Jacobian of \(\operatorname{Spec}\mathbf Z\)</a> develops a Picard–Jacobian formalism for \(\overline{\operatorname{Spec} \mathbf{Z}}\)
+within the adelic framework. In this construction, elements of the adele class space, and specifically 
+its Riemann sector \(X_{\mathbf Q}\), are viewed in terms of torsion-free rank-one abelian groups equipped with 
+additional rigidifying data that extend the notion of metrized line bundles in Arakelov geometry. 
+This point of view leads to the definition of a Picard monoid associated with the completed 
+arithmetic curve and to a corresponding arithmetic Jacobian obtained by quotienting by the natural 
+scaling action of the positive real numbers.<br> Within this framework the product of adeles acquires 
+a direct geometric meaning through the tensor product of these rank-one groups, while the Riemann 
+sector \(X_{\mathbf Q}\) appears naturally as a distinguished component of the resulting 
+geometric structure. This approach also provides a conceptual interpretation of the geometric strata 
+arising in the spectral realization of L-functions and further clarifies the geometric role of 
+the adele class space in the study of the Riemann zeta function. <br>
+
+The Riemann sector $X_{\mathbf{Q}}$, when viewed through the lens of functional analysis, is best understood by focusing on a finite subset of places at a time. Specifically, this involves considering a finite subset $S \subset \Sigma_{\mathbf{Q}}$ of places of $\mathbf{Q}$, which includes the archimedean place $\infty$. This approach stems from the fact that the function space associated with $X_{\mathbf{Q}}$ is expressed as a cross product and comprises functions defined on the adeles and more specifically belonging to the Bruhat-Schwartz space characterized by their non-trivial dependence on only finitely many places.  The Bruhat-Schwartz functions $f$ are finite linear combinations of the products $f=\otimes_v f_v$ over places $v$ of $\mathbf{Q}$, where each $f_v$ is a Bruhat-Schwartz function on the local field $\mathbf{Q}_v$ and $f_v=\mathbf{1}_{\mathcal{O}_v}$ is the characteristic function on the ring of integers $\mathcal{O}_v$ for all but finitely many $v$. Except for a finite set $S$ of places, the functions reduce to the characteristic functions of the maximal compact subring of the restricted infinite product of local fields $\prod_{v \notin S}^{\prime} \mathbf{Q}_v$.
+Functional analysis focuses on the locally compact rings $\mathbb{A}_S=\prod_{v \in S} \mathbf{Q}_v$, moreover, the group involved in the cross product, which globally corresponds to $\mathbf{Q}^{\times}$, naturally restricts to a subgroup $\Gamma_S:=\mathbf{Z}_S^{\times} \subset \mathbf{Q}^{\times}$that depends on the finite set $S$. These semilocal algebras form a sheaf \(\mathscr O\) of algebras over $\overline{\operatorname{Spec}\mathbf{Z}}$. The stalk of the sheaf \(\mathscr O\) at the generic point $\eta \in \operatorname{Spec} \mathbf{Z}$ is the Bruhat-Schwartz algebra of functions on $\mathbb{A}_{\mathbf{Q}}$, whereas the global sections  form the Schwartz space $\mathcal{S}(\mathbf{R})=\mathcal{S}\left(\mathbb{A}_{\{\infty\}}\right)$: the Bruhat-Schwartz space of functions on the (semi)local adeles at \(\infty\). The identification $\Gamma_S=\mathbf{G}_m\left(S^c\right)$ supplies the conceptual meaning of the groups $\Gamma_S$ as sections of the sheaf in groups $\mathbf{G}_m$ on Spec $\mathbf{Z}$. The algebraic cross product $\mathscr F:=\mathscr{O} \rtimes \mathbf{G}_m$ defines an interesting sheaf of algebras on $\overline{\operatorname{Spec} \mathbf{Z}}$ such that
+$$
+\mathscr F\left(S^c\right)=\mathcal{S}\left(\mathbb{A}_S\right) \rtimes \mathbf{Z}_S^{\times} .
+$$
+The stalk of \(\mathscr F\) at the generic point $\eta \in \operatorname{Spec} \mathbf{Z}$ is the global cross product $\mathcal{S}\left(\mathbb{A}_{\mathbf{Q}}\right) \rtimes \mathbf{Q}^{\times}$, while 
+the global sections  form the cross product $\mathcal{S}(\mathbf{R}) \rtimes\{ \pm 1\}$.
+
+<br>
+
+Building on the Picard–Jacobian formalism, the very recent preprint <a href="https://arxiv.org/pdf/2606.06604" target="_blank" rel="noopener">On the absolute geometry 
+of \(\operatorname{Spec}\mathbf Z\)</a> pushes the same 
+circle of ideas below the ring \(\mathbf Z\), constructing the absolute \(\mathbf F_1\)-arithmetic 
+curve:
+\[
+(\mathrm{Spec}\,\mathbf Z)_{\mathbf F_1} =(\operatorname{Spec}\mathbf Z, \Theta^{-1}(\mathbf F_1[T]))
+\]
+by pulling back the \(\mathbf F_1\)-structure 
+sheaf of the arithmetic topos \(\widehat{\mathbf N^\times_0}\) to \(\mathrm{Spec}(\mathbf Z)\). Because it is defined below \(\mathbf Z\), 
+this absolute curve is insensitive to the characteristic of the fields over which it is evaluated, and 
+it furnishes a common geometric origin for structures that had appeared unrelated: those 
+of \(p\)-adic Hodge theory, of complex analytic geometry, and of the adelic Scaling Site \(\mathscr S\). 
+Evaluated over a perfectoid field, the local stalk of this absolute curve behaves as a universal tilting 
+functor: it recovers the tilt intrinsically and identifies the moduli space of its points, taken 
+modulo the natural symmetries of the completed stalk, with the closed points of the 
+Fargues–Fontaine curve. This yields at once a concrete realization and a broad generalization 
+of Scholze's heuristic description of the points of \(\mathrm{Spec}\,\mathbf Z\) over a perfectoid 
+field. Evaluated instead over the complex numbers, the same absolute geometry produces the 
+complex Tate curve, which decomposes canonically as the product of the adelic periodic orbit 
+\(C_p=\mathbf R^\times_+/p^{\mathbf Z}\) — carrying the entire dependence on the prime \(p\) — and 
+a \(p\)-independent factor that emerges as a real analogue of the Fargues–Fontaine curve. A 
+single absolute object thus brings to light the universal geometric principles underlying results 
+that live, a priori, in very different worlds, and connects them further to the characteristic-1 
+geometry of the scaling site through a canonical tropicalization. 
+</p>
+
+<p>The accompanying page, <a href="timeline.html"><strong>Evolution of a Research Program</strong></a>, 
+summarizes this whole development through a conceptual diagram whose nodes represent the principal 
+ideas and constructions.</p>
 </section>
-<section class="card"><h2>Quantum statistical mechanics and arithmetic</h2>
-<p class="section-kicker">Goal: understand how noncommutative spaces and quantum statistical mechanics encode arithmetic symmetries.</p>
-<p>Noncommutative arithmetic geometry emerged in the early 1990s with the introduction of the Bost--Connes quantum statistical dynamical system, commonly known as the BC-system. This remarkable system exhibits the Riemann zeta function as its partition function, while its zero-temperature equilibrium states realize the global class field isomorphism for the rational number field \(\mathbf Q\). It established one of the first conceptual bridges between noncommutative geometry, quantum statistical mechanics, and arithmetic.</p>
-<p>In a long-term collaboration with Alain Connes, this circle of ideas was extended through new connections with \(p\)-adic analysis, Witt vectors, and \(p\)-adic Hodge theory. Among the outcomes is the construction of an archimedean analogue of Fontaine's period rings, providing an arithmetic framework at the archimedean place that parallels several fundamental features of \(p\)-adic Hodge theory.</p>
-</section>
-<section class="card"><h2>Cyclic homology and archimedean arithmetic</h2>
-<p class="section-kicker">Goal: reinterpret archimedean factors of arithmetic \(L\)-functions cohomologically.</p>
-<p>Another direction, also developed in collaboration with Alain Connes, concerns the arithmetic interpretation of the cyclic homology of algebraic varieties. The cyclic homology of a scheme provides a natural cohomological framework in which Serre's archimedean local factors of the Hasse--Weil \(L\)-functions of smooth projective varieties over number fields admit a geometric interpretation as regularized determinants.</p>
-<p>This work establishes a direct connection between cyclic homology, noncommutative geometry, and the arithmetic of \(L\)-functions, extending to the archimedean setting several ideas that traditionally belong to étale and crystalline cohomology.</p>
-</section>
-<section class="card"><h2>The Arithmetic Site and the Scaling Site</h2>
-<p class="section-kicker">Goal: construct geometric models for the finite and full Riemann sectors of the adele class space.</p>
-<p>The study of the adele class space of \(\mathbf Q\) naturally led to the problem of constructing an algebro-geometric model for one of the fundamental noncommutative spaces underlying the spectral interpretation of the Riemann zeta function. This led to the introduction of the Arithmetic Site, originally defined as a pair consisting of a Grothendieck topos together with a structure sheaf over the Boolean semifield \(\mathbf B\), the smallest idempotent semifield, or equivalently the smallest semifield of characteristic one.</p>
-<p>The Arithmetic Site provides an algebro-geometric realization of the finite part of the Riemann sector of the adele class space, namely the quotient obtained after removing the archimedean component, while remaining compatible with the original analytic description introduced by Alain Connes.</p>
-<p>The Arithmetic Site naturally admits an extension of scalars from \(\mathbf B\) to the tropical semifield of real numbers. The resulting geometric object is the Scaling Site. Unlike the Arithmetic Site, the Scaling Site recovers the full Riemann sector of the adele class space, including its archimedean component, and its points are canonically identified with the corresponding adelic quotient.</p>
-<p>These constructions were originally developed within the setting of characteristic-one algebraic structures. This naturally led to a corresponding homological algebra for sheaves of idempotent modules over a topos, with the category of modules over \(\mathbf B\) playing the role of the characteristic-one analogue of the category of abelian groups.</p>
-</section>
-<section class="card"><h2>Characteristic-free absolute algebraic geometry</h2>
-<p class="section-kicker">Goal: develop an absolute geometric framework independent of any fixed characteristic.</p>
-<p>A natural limitation of the original characteristic-one framework is the absence of a canonical morphism from the ring of integers \(\mathbf Z\) to the Boolean semifield \(\mathbf B\). This observation motivated the search for a genuinely characteristic-free approach to absolute algebraic geometry.</p>
-<p>This led to the development of a categorical theory of modules and algebras over the sphere spectrum, based on Segal's theory of \(\Gamma\)-sets and spherical algebras. Within this framework, geometry is developed directly over the sphere spectrum, providing a common foundation for arithmetic geometry that no longer depends on characteristic-one algebraic structures, while preserving the geometric insights originating from the Arithmetic Site.</p>
-</section>
-<section class="card"><h2>Arakelov geometry, Picard geometry and the adele class space</h2>
-<p class="section-kicker">Goal: construct arithmetic analogues of the Picard, Jacobian and Riemann--Roch theories of algebraic curves.</p>
-<p>These ideas also lead naturally to Arakelov geometry, where they yield a new form of the Riemann--Roch theorem based on the interpretation of the compactification of \(\operatorname{Spec}\mathbb Z\) as an arithmetic curve over the absolute sphere spectrum.</p>
-<p>The geometric interpretation of the adele class space also leads to a natural extension of global class field theory. Just as Grothendieck's étale fundamental group extends Galois theory from fields to schemes, the adele class space, viewed as a covering of the Scaling Site, provides an analogous extension of the class field isomorphism for \(\mathbf Q\) to arithmetic schemes related to \(\operatorname{Spec}\mathbb Z\).</p>
-<p>A natural continuation of this viewpoint is the development of a Picard--Jacobian theory for the arithmetic curve \(\operatorname{Spec}\mathbb Z\). In this framework, elements of the adele class space, and in particular of its Riemann sector, are described in terms of torsion-free rank-one abelian groups equipped with additional rigidifying data. This leads to Picard monoids associated with \(\operatorname{Spec}\mathbb Z\) and with the completed arithmetic curve, and to a corresponding arithmetic Jacobian obtained by quotienting by the natural scaling action of \(\mathbf R_+^*\).</p>
-</section>
-<section class="card"><h2>Absolute geometry of \(\operatorname{Spec}\mathbb Z\)</h2>
-<p class="section-kicker">Goal: unify the arithmetic topos, characteristic-free geometry, perfectoid fields, the Fargues--Fontaine curve and local Weil groups.</p>
-<p>The developments described above culminate in recent work on the absolute geometry of \(\operatorname{Spec}\mathbb Z\), where ideas originating from the Arithmetic Site, absolute algebraic geometry, and the Picard geometry of the arithmetic curve are unified within a single characteristic-free geometric framework.</p>
-<p>The key point is to retain the underlying arithmetic topos and its geometry of points, while replacing the original characteristic-one structure sheaf by the characteristic-free spherical \(\mathbb F_1\)-algebra \(\mathbb F_1[T]\). This leads to a new \(\mathbb F_1\)-arithmetic site and to the absolute arithmetic curve
-\[ (\operatorname{Spec}\mathbb Z)_{\mathbb F_1}. \]
-A central role is played by an Abel--Jacobi morphism from \(\operatorname{Spec}\mathbb Z\) to the Picard geometry of \(\operatorname{Spec}\mathbb Z\), assigning to a prime \(p\) the rank-one group \(\mathbb Z[1/p]\).</p>
-<p>One of the principal results shows that, when the absolute curve is evaluated on an algebraically closed perfectoid field of characteristic \(p\), its moduli of local points recover Scholze's heuristic description of untilts modulo Frobenius. A further result extends this picture to arbitrary perfectoid fields of residue characteristic \(p\): the local geometry at \(p\) canonically reconstructs the tilt and identifies the corresponding quotient with the closed points of the Fargues--Fontaine curve \(\mathcal X_{C^\flat,\mathbf Q_p}\), together with its distinguished point.</p>
-<p>The same framework also admits an archimedean realization. Evaluating the absolute curve over the complex numbers reveals that the local arithmetic naturally extends the Frobenius action to actions of the local Weil groups \(W_v\), simultaneously at the finite place \(p\) and at the archimedean place. The corresponding spaces of local points become natural \(W_v\)-torsors, from which classical geometric objects arise, including the complex Tate elliptic curve \(E_p\simeq\mathbf C^\times/p^{\mathbf Z}\), its natural real structure, and the periodic orbit \(C_p\) appearing in the adelic geometry of the Riemann zeta function.</p>
-</section>
-<section class="card"><h2>Long-term objective</h2>
-<p>Taken together, these developments illustrate a common objective: to construct new geometric frameworks capable of encoding the arithmetic of number fields, with the long-term goal of adapting and extending the geometric ideas underlying Weil's proof of the Riemann Hypothesis for function fields to the arithmetic of number fields.</p>
-</section>
-</main><footer class="site-footer"><div class="container">© Caterina Consani. Built with GitHub Pages and MathJax.</div></footer></body></html>
+<section class="card"><h2>Geometric focus</h2><p>The present website focuses on the geometric side of the program. Analytic developments connected with the Riemann Hypothesis, trace formulas, functional analysis, and noncommutative geometry will be mentioned where they directly illuminate a geometric construction, but they are not developed here as an independent narrative.</p></section>
+
+</main><footer class="site-footer"><div class="container">© Katia Consani.  Built with GitHub Pages and MathJax.</div></footer></body></html>

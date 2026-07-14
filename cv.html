@@ -1,9 +1,433 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Curriculum Vitae | Katia Consani</title><link rel="stylesheet" href="css/style.css"><script>window.MathJax={tex:{inlineMath:[['\\(','\\)'],['$','$']],displayMath:[['\\[','\\]'],['$$','$$']]},svg:{fontCache:'global'}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head>
-<body><header class="site-header"><div class="container header-grid"><div class="brand">Caterina (Katia) Consani</div><nav class="nav"><a href="index.html">Home</a><a href="research.html">Research Overview</a><a href="timeline.html">Timeline</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="seminars.html">Seminars</a><a href="conferences.html">Conferences</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav></div></header>
-<main class="container">
-<section class="card"><p class="eyebrow">CV</p><h1>Curriculum Vitae</h1>
-<p class="lead">A downloadable CV can be placed in the <code>files</code> folder and linked from this page.</p>
-<p>For example, once a file named <code>CV.pdf</code> is uploaded to the <code>files</code> folder, this page can contain a direct link to it.</p>
-</section>
-</main><footer class="site-footer"><div class="container">© Caterina Consani. Built with GitHub Pages and MathJax.</div></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV | Katia Consani</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+    processEscapes: true
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    .cv-intro {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .cv-contact {
+      background: #f7f9fb;
+      border: 1px solid #dfe5ea;
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+    }
+
+    .cv-section {
+      margin-top: 1.25rem;
+    }
+
+    .cv-section h2 {
+      margin-bottom: 0.75rem;
+    }
+
+    .cv-entry {
+      margin-bottom: 1rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid #e7ebef;
+    }
+
+    .cv-entry:last-child {
+      border-bottom: none;
+    }
+
+    .cv-entry h3 {
+      margin: 0 0 0.2rem;
+      font-size: 1.05rem;
+    }
+
+    .cv-meta {
+      font-weight: 600;
+      margin: 0.15rem 0;
+    }
+
+    .cv-entry ul,
+    .cv-list {
+      margin-top: 0.45rem;
+    }
+
+    .cv-list li {
+      margin-bottom: 0.45rem;
+    }
+
+    .two-column-list {
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    .two-column-list li {
+      break-inside: avoid;
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-note {
+      color: #4d5963;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      .cv-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .two-column-list {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">Caterina (Katia) Consani</div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="me.html">About Me</a>
+        <a href="research.html">Research</a>
+        <a href="timeline.html">Evolution</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="conferences.html">Conferences</a
+        <a href="seminars.html"></a>
+        <a href="contact.html"></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Curriculum Vitae</h1>
+
+      <div class="cv-intro">
+        <div>
+          <p>
+            <strong>Caterina Consani</strong><br>
+            Professor of Mathematics<br>
+            Johns Hopkins University
+          </p>
+
+          <p>
+            <strong>Research interests:</strong><br>
+            Arithmetic–Noncommutative Geometry, Algebraic Geometry, and Number Theory.
+          </p>
+
+          <p class="cv-note">
+            Updated January 2026.
+          </p>
+        </div>
+
+        <div class="cv-contact">
+          <strong>Contact</strong>
+          <p>
+            Department of Mathematics<br>
+            Johns Hopkins University<br>
+            Krieger Hall 410-B<br>
+            3400 N. Charles Street<br>
+            Baltimore, MD 21218-2683
+          </p>
+          <p>
+            <a href="mailto:cconsan1@jhu.edu">cconsan1@jhu.edu</a><br>
+            <a href="https://www.math.jhu.edu/~kc" target="_blank" rel="noopener">
+              www.math.jhu.edu/~kc
+            </a>
+          </p>
+          <p><strong>Citizenship:</strong> United States and Italy</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Academic Appointments</h2>
+
+      <div class="cv-entry">
+        <h3>Johns Hopkins University</h3>
+        <p class="cv-meta">Baltimore, Maryland</p>
+        <ul>
+          <li>Professor, July 2008–present</li>
+          <li>Associate Professor with tenure, 2005–2008</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <h3>University of Toronto</h3>
+        <p class="cv-meta">Toronto, Ontario, Canada</p>
+        <ul>
+          <li>Associate Professor of Mathematics with tenure, 2003–2005</li>
+          <li>Assistant Professor of Mathematics, 2000–2003</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Institute for Advanced Study</h3>
+        <p class="cv-meta">Princeton, New Jersey</p>
+        <ul>
+          <li>Member, School of Mathematics, 1999–2000</li>
+          <li>Mentor: Pierre Deligne</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <h3>University of Cambridge</h3>
+        <p class="cv-meta">Cambridge, United Kingdom</p>
+        <ul>
+          <li>Research Associate, January–June 1998</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Massachusetts Institute of Technology</h3>
+        <p class="cv-meta">Cambridge, Massachusetts</p>
+        <ul>
+          <li>C. L. E. Moore Instructor, 1996–1999</li>
+          <li>Mentor: Alexander Goncharov</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Education</h2>
+
+      <div class="cv-entry">
+        <h3>The University of Chicago</h3>
+        <ul>
+          <li>Ph.D. in Mathematics, 1993–1996</li>
+          <li>Advisor: Spencer Bloch</li>
+          <li>
+            Thesis: <em>Double Complexes and Euler L-Factors on Degenerations of Algebraic Varieties</em>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Universities of Genoa and Turin</h3>
+        <ul>
+          <li>Dottore di Ricerca in Matematica, 1988–1993</li>
+          <li>Advisor: Claudio Pedrini</li>
+          <li>
+            Thesis: <em>Intersection Theories and K-Theory on Singular Varieties</em>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Scuola Nazionale di Alta Matematica F. Severi</h3>
+        <ul>
+          <li>Postdoctoral Fellow, Rome La Sapienza and University of Florence, 1986–1988</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <h3>University of Genoa</h3>
+        <ul>
+          <li>Laurea in Mathematics, <em>cum laude</em>, 1981–1986</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Grants</h2>
+      <ul class="cv-list">
+        <li>PI, NSF DMS-2601705 Conference: Fundamental Geometries, 2026–2027</li>
+        <li>PI, Simons Foundation Collaboration Grant for Mathematicians No. 691493, 2020–2025</li>
+        <li>Co-PI, NSF DMS-1854546 Special Meetings Grant, 2019–2020</li>
+        <li>Co-PI, NSF DMS-1701934 Special Meetings Grant, 2017–2018</li>
+        <li>PI, Simons Foundation Collaboration Grant for Mathematicians No. 353677, 2015–2020</li>
+        <li>PI, NSF DMS-1069218, 2011–2015</li>
+        <li>PI, NSF FRG-0652431, 2007–2011</li>
+      </ul>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Honors</h2>
+      <ul class="cv-list">
+        <li>Fellow of the American Mathematical Society, 2024</li>
+      </ul>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Synergistic Activities</h2>
+      <ul class="cv-list">
+        <li>Co-organizer, <em>Absolute Geometries</em>, JHU–University of Bologna, Bologna, June 2026</li>
+        <li>Co-organizer, <em>Noncommutativity at the Interface of Topology, Geometry and Analysis</em>, Bologna, June 2024</li>
+        <li>Co-organizer, <em>Cyclic Cohomology at 40: Achievements and Future Prospects</em>, Fields Institute, September 2021</li>
+        <li>
+          Co-organizer, <em>Global Noncommutative Geometry Seminar</em>, 2020–present,
+          <a href="https://globalncgseminar.org/" target="_blank" rel="noopener">globalncgseminar.org</a>
+        </li>
+        <li>Co-organizer, JAMI Program <em>Riemann–Roch in Characteristic One and Related Topics</em>, Johns Hopkins University, 2019</li>
+        <li>
+          Co-organizer, <em>Toposes in Como</em>, Villa del Grumello, Como, 2018,
+          <a href="https://tcsc.lakecomoschool.org" target="_blank" rel="noopener">conference website</a>
+        </li>
+        <li>Co-organizer, conference in honor of Alain Connes' 70th birthday, Fudan University, Shanghai, 2017</li>
+        <li>Co-organizer, Noncommutative Geometry Festival in honor of Henri Moscovici's 70th birthday, Texas A&amp;M University, 2014</li>
+        <li>Co-organizer, JAMI Program <em>Number Theory and Related Topics</em>, Johns Hopkins University, 2013</li>
+      </ul>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Visiting Positions</h2>
+      <ul class="cv-list">
+        <li>Fields Institute, Toronto, December 2023</li>
+        <li>Mathematisches Forschungsinstitut Oberwolfach, several visits, 2011–2026</li>
+        <li>Ohio State University, several visits, 2013–2019</li>
+        <li>Shanghai Center for Mathematical Sciences, April–May 2017</li>
+        <li>IHES, November 2015</li>
+        <li>Hausdorff Center for Mathematics, Bonn, November 2014</li>
+      </ul>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Editorial Work and Reviewer Service</h2>
+
+      <h3>Editorial Boards</h3>
+      <ul class="cv-list">
+        <li>
+          <a href="https://ems.press/journals/jncg" target="_blank" rel="noopener">
+            Journal of Noncommutative Geometry
+          </a>
+        </li>
+        <li>
+          <a href="http://www.journals.elsevier.com/journal-of-number-theory" target="_blank" rel="noopener">
+            Journal of Number Theory
+          </a>
+        </li>
+        <li>
+          <a href="http://rendiconti.math.unipd.it" target="_blank" rel="noopener">
+            Rendiconti del Seminario Matematico della Università di Padova
+          </a>
+        </li>
+      </ul>
+
+      <h3>Editorial Projects</h3>
+      <ul class="cv-list">
+        <li>Co-editor, Proceedings of Symposia in Pure Mathematics, AMS, 2023</li>
+        <li>Co-editor, <em>Cyclic Cohomology at 40: Achievements and Future Prospects</em></li>
+        <li>Co-editor, <em>Advances in Noncommutative Geometry: On the Occasion of Alain Connes' 70th Birthday</em>, Springer, 2019</li>
+        <li>Co-editor, Proceedings of the 21st JAMI Conference, Johns Hopkins University Press, 2012</li>
+        <li>Co-editor, <em>Noncommutative Geometry and Number Theory: Where Arithmetic Meets Geometry and Physics</em>, Vieweg, 2006</li>
+      </ul>
+
+      <h3>Selected Reviewer Service</h3>
+      <p>
+        NSF, NSERC, Canadian Mathematical Society, American Mathematical Society,
+        Royal Society URF, High Council for the Evaluation of Research (France),
+        Mathematical Reviews, Zentralblatt Math, Banff International Research Station,
+        and numerous journals in algebra, geometry, number theory, and analysis.
+      </p>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Selected Meetings and Seminars</h2>
+      <ul class="cv-list">
+        <li>Oberwolfach Workshop <em>Low-dimensional Topology and Number Theory</em>, April 2026</li>
+        <li>Invited talk, <em>Interfaces of Spectral Theory, Operator Algebras and Noncommutative Geometry</em>, Bonn, June–July 2026</li>
+        <li>Algebra Seminar, Tulane University, May 2025</li>
+        <li>Colloquium, University of Pittsburgh, November 2024</li>
+        <li><em>Regulators V</em>, University of Pisa, June 2024</li>
+        <li>North Atlantic Noncommutative Geometry Seminar, April 2024</li>
+        <li>Fields Institute workshop on Operator Algebras and Noncommutative Geometry, December 2023</li>
+        <li>Algebra Seminar, Universidad Nacional de Colombia, December 2021</li>
+        <li>Fields Institute, September 2021</li>
+        <li>Yorkshire and Midlands Category Seminar, September 2021</li>
+        <li>Western University Colloquium, December 2020</li>
+        <li>Texas A&amp;M University, September 2019</li>
+      </ul>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Ph.D. Students</h2>
+
+      <div class="cv-entry">
+        <h3>Luqiao Xu</h3>
+        <p class="cv-meta">Johns Hopkins University, 2020–2026</p>
+        <p><em>On the Geometry over the Absolute Point</em></p>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Sean Owen</h3>
+        <p class="cv-meta">Johns Hopkins University, 2018–2024</p>
+        <p><em>On Absolute Riemann–Roch and Rings of \(\mu\)-Polynomials</em></p>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Benjamin Diamond</h3>
+        <p class="cv-meta">Johns Hopkins University, 2016–2017</p>
+        <p><em>Smooth Surfaces in Smooth Fourfolds with Vanishing First Chern Class</em></p>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Kalina Mincheva</h3>
+        <p class="cv-meta">Johns Hopkins University, 2011–2016</p>
+        <p><em>Semiring Congruences and Tropical Geometry</em></p>
+      </div>
+
+      <div class="cv-entry">
+        <h3>JaiUng Jun</h3>
+        <p class="cv-meta">Johns Hopkins University, 2010–2015</p>
+        <p><em>Algebraic Geometry over Semistructures and Hyperstructures in Characteristic One</em></p>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Jeffrey Tolliver</h3>
+        <p class="cv-meta">Johns Hopkins University, 2010–2015</p>
+        <p><em>Hyperstructures and Idempotent Semistructures</em></p>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Abhishek Banerjee</h3>
+        <p class="cv-meta">Johns Hopkins University, 2005–2009</p>
+        <p><em>Nearby Cycles and Periodicity in Cyclic Homology</em></p>
+      </div>
+
+      <div class="cv-entry">
+        <h3>Geoffrey Lynch</h3>
+        <p class="cv-meta">University of Toronto, 2002–2007</p>
+        <p><em>The Local Monodromy Operator as an Algebraic Cycle</em></p>
+      </div>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Postdoctoral Fellows</h2>
+      <ul class="cv-list">
+        <li>Aurélien Sagnier, J. J. Sylvester Assistant Professor, Johns Hopkins University, 2019–2022</li>
+        <li>Snigdhayan Mahanta, J. J. Sylvester Assistant Professor, Johns Hopkins University, 2008–2010</li>
+      </ul>
+    </section>
+
+    <section class="card cv-section">
+      <h2>Publications</h2>
+      <p>
+        A complete list of publications and preprints is available on the
+        <a href="publications.html">Publications</a> page.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © Katia Consani. Built with GitHub Pages.
+    </div>
+  </footer>
+</body>
+</html>

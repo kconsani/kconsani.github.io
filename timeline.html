@@ -1,26 +1,332 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mathematical Timeline | Katia Consani</title><link rel="stylesheet" href="css/style.css"><script>window.MathJax={tex:{inlineMath:[['\\(','\\)'],['$','$']],displayMath:[['\\[','\\]'],['$$','$$']]},svg:{fontCache:'global'}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body><header class="site-header"><div class="container header-grid"><div class="brand">Caterina (Katia) Consani</div><nav class="nav"><a href="index.html">Home</a><a href="research.html">Research Overview</a><a href="timeline.html">Timeline</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="seminars.html">Seminars</a><a href="conferences.html">Conferences</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav></div></header><main class="container"><section class="card"><p class="eyebrow">Research</p><h1>Mathematical Timeline</h1><p class="lead">This timeline records the evolution of the main ideas, with approximate periods, principal constructions, and guiding questions.</p><div class="timeline">
-<div class="tl-item"><div class="tl-year">Early 1990s</div><div><div class="tl-title">BC-system</div><div class="tl-question">Can quantum statistical mechanics reveal fundamental arithmetic structures?</div></div></div>
-<div class="tl-item"><div class="tl-year">2000–2010</div><div><div class="tl-title">Witt vectors and archimedean period rings</div><div class="tl-question">How does the BC-system connect with \(p\)-adic and arithmetic geometry?</div></div></div>
-<div class="tl-item"><div class="tl-year">2010–2014</div><div><div class="tl-title">Arithmetic Site</div><div class="tl-question">Can the finite Riemann sector of the adele class space be realized geometrically?</div></div></div>
-<div class="tl-item"><div class="tl-year">2014–2017</div><div><div class="tl-title">Scaling Site</div><div class="tl-question">How can the archimedean component be incorporated?</div></div></div>
-<div class="tl-item"><div class="tl-year">2016–2022</div><div><div class="tl-title">Characteristic-one homological algebra</div><div class="tl-question">What replaces homological algebra over idempotent algebraic structures?</div></div></div>
-<div class="tl-item"><div class="tl-year">2018–2024</div><div><div class="tl-title">Segal \(\Gamma\)-rings and spherical algebras</div><div class="tl-question">Can one build an absolute geometry independent of characteristic?</div></div></div>
-<div class="tl-item"><div class="tl-year">2021–2025</div><div><div class="tl-title">Picard and Jacobian geometry of \(\operatorname{Spec}\mathbb Z\)</div><div class="tl-question">What is the arithmetic analogue of Picard and Jacobian theories for algebraic curves?</div></div></div>
-<div class="tl-item"><div class="tl-year">2025–2026</div><div><div class="tl-title">Absolute geometry of \(\operatorname{Spec}\mathbb Z\)</div><div class="tl-question">Can absolute geometry recover perfectoid fields, the Fargues--Fontaine curve and local Weil groups?</div></div></div>
-<div class="tl-item"><div class="tl-year">Current</div><div><div class="tl-title">Towards geometric methods for the Riemann Hypothesis</div><div class="tl-question">Can ideas inspired by Weil's proof for function fields be adapted to number fields?</div></div></div>
-</div></section><section class="card"><h2>Genealogy of ideas</h2><div class="math-box"><pre style="white-space:pre-wrap;font-family:Georgia,'Times New Roman',serif;margin:0">BC-system
-   ↓
-Arithmetic Site
-   ↓
-Scaling Site
-   ↓
-Characteristic-one geometry
-   ↓
-Segal Γ-rings and spherical algebras
-   ↓
-Picard geometry of Spec Z
-   ↓
-Absolute geometry of Spec Z
-   ├── Perfectoid geometry
-   ├── Fargues--Fontaine curve
-   └── Local Weil groups</pre></div></section></main><footer class="site-footer"><div class="container">© Caterina Consani. Built with GitHub Pages and MathJax.</div></footer></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Evolution of the Research Program | Katia Consani</title><link rel="stylesheet" href="css/style.css">
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+    processEscapes: true
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+/* Branching section of the research graph (self-contained; complements css/style.css) */
+.branch-group{display:flex;flex-direction:column;align-items:stretch;width:100%;max-width:680px;margin:0 auto;}
+.branch-arrows{display:flex;}
+.branch-arrows .arrow{flex:1;text-align:center;margin:0;}
+.branches{display:flex;gap:1rem;align-items:stretch;justify-content:center;}
+.branches .branch{flex:1;display:flex;flex-direction:column;align-items:center;}
+.branches .branch .graph-node{width:100%;box-sizing:border-box;margin:0;height:100%;}
+@media (max-width:560px){
+  .branches{flex-direction:column;gap:.75rem;}
+  .branch-arrows{display:none;}
+}
+
+.graph { position: relative; }
+
+#long-arrow-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 3;
+}
+
+#spectral-current-arrow {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  marker-end: url(#long-arrow-head);
+}
+
+#long-arrow-head path { fill: currentColor; }
+
+.graph-node {
+  position: relative;
+  z-index: 4;
+}
+
+
+.current-pair{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  align-items:stretch;
+  width:100%;
+  max-width:680px;
+  margin:0 auto;
+}
+
+.current-pair .graph-node{
+  flex:1;
+  width:100%;
+  box-sizing:border-box;
+  margin:0;
+}
+
+@media (max-width:560px){
+  .current-pair{
+    flex-direction:column;
+  }
+}
+
+</style>
+</head><body><header class="site-header"><div class="container header-grid"><div class="brand">Caterina (Katia) Consani</div><nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="conferences.html">Conferences</a>
+  <a href="cv.html">CV</a>
+  <a href="contact.html"></a>
+  <a href="seminars.html"></a>
+</nav></div></header><main class="container">
+<section class="card"><p class="eyebrow">Research</p><h1>Evolution of the Research Program</h1>
+<p class="lead"><strong>In search of the geometry of the prime numbers</strong></p><p>Mathematics often evolves through a succession of questions, where each new construction arises from the limitations of the preceding one. This page illustrates the conceptual evolution of the research program (joint with A. Connes) described in the <a href="research.html">Research Overview</a>.</p>
+<p>In the diagram below  each node represents a mathematical idea or construction that marked a significant
+stage in the development of this program. The arrows indicate how one question naturally led to the next,
+revealing progressively richer geometric structures.</p>
+</section>
+
+<section class="card">
+<h2>Conceptual Roadmap</h2>
+
+<div class="graph">
+
+<svg id="long-arrow-layer" aria-hidden="true">
+  <defs>
+    <marker id="long-arrow-head" markerWidth="10" markerHeight="10"
+      refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z"></path>
+    </marker>
+  </defs>
+  <path id="spectral-current-arrow"></path>
+</svg>
+
+
+  <div class="graph-node muted">
+    <span class="date">Background</span>
+    <strong>Bost--Connes system</strong>
+    <small>early 1990s</small>
+  </div>
+
+  
+
+  <div class="branch-group">
+
+    <div class="branch-arrows">
+      <span class="arrow">↙</span>
+      <span class="arrow">↘</span>
+    </div>
+
+    <div class="branches">
+      <div class="branch">
+        <div class="graph-node">
+          <span class="date">2008–2014</span>
+          <strong>Integral model of the BC-system</strong>
+          <small>Geometry and arithmetic</small>
+          <small>The role of the Riemann zeta function, as partition function of the BC-system over $\mathbf{C}$ is replaced, in the $p$-adic case, by $p$-adic $L$-functions and polylogarithms whose values at roots of unity encode the KMS states.</small>
+        </div>
+      </div>
+      <div class="branch">
+        <div class="graph-node">
+          <span class="date">2009–2014</span>
+          <strong>Geometries over \( \mathbf F_1 \)</strong>
+          <strong>Zeta function of  \(C=\overline{\operatorname{Spec}\mathbf Z}\) over \( \mathbf F_1 \)</strong>
+          <small>Complete Riemann-zeta function is recast as the limit \(q\to 1\) of the Hasse-Weil zeta  function of a real-valued continuous function \(N_C(q)\), $q\in [1, \infty)$ satisfying a polynomial bound. </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="branch-arrows">
+      <span class="arrow">↘</span>
+      <span class="arrow">↙</span>
+    </div>
+
+  </div>
+
+  
+
+  <div class="graph-node object">
+    <span class="date">2014–2016</span>
+    <strong>Arithmetic Site</strong>
+    <small>Points of the arithmetic topos realize the finite part of the Riemann sector \(X_{\mathbf Q}\) of the adele class space.</small>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="graph-node object">
+    <span class="date">2016–2017</span>
+    <strong>Scaling Site</strong>
+    <small>Incorporating the archimedean component of the Riemann sector and the periodic orbits \(C_p\) (of length \(\log p\)) associated to the primes.</small>
+  </div>
+
+  
+
+  <div class="branch-group">
+
+    <div class="branch-arrows">
+      <span class="arrow">↙</span>
+      <span class="arrow">↘</span>
+    </div>
+   
+
+    <div class="branches">
+      <div class="branch">
+        <div class="graph-node">
+          <span class="date">2017–2019</span>
+          <strong>Homological algebra in characteristic one</strong>
+          <small>The non-abelian category of modules over the Boolean semifield.</small>
+        </div>
+        <div class="arrow">↓</div>
+
+        <div class="graph-node">
+    <span class="date">2020-2025</span>
+    <strong>Characteristic-Free Geometry</strong>
+    <small>The absolute base \(\mathbf F_1\)</small>
+    <small>Riemann-Roch  for \(\overline{\operatorname{Spec}\mathbf Z}\) over \(\mathbf F_1\).</small>
+    <small>Knots, primes and class field theory: functor mapping finite abelian extensions of $\mathbf{Q}$ to finite covers of the Riemann sector $X_{\mathbf{Q}}$, with the monodromy of periodic orbits \(C_p\) under the scaling action corresponding to the Galois action of the Frobenius at the prime p.</small>
+    <small>The sheaf  \(\mathscr F=\mathscr{O} \rtimes \mathbf{G}_m\) of algebras on \(\overline{\operatorname{Spec}\mathbf Z}\): the root of the link between \(\operatorname{Spec}\mathbf Z\) and analysis </small>
+  </div>
+      </div>
+      <div class="branch">
+        <div class="graph-node">
+          <span class="date">2019–2021</span>
+          <strong>Weil positivity and trace formula:</strong> <strong>the archimedean place</strong>
+          <small>Weil's distribution vs. trace of scaling action on Sonin's space and prolate spheroidal wave functions.</small>
+        </div>
+         <div class="arrow">↓</div>
+        <div class="graph-node" id="spectral-node">
+    <span class="date">2021-2025</span>
+    <strong>Spectral triples and \(\zeta\)-cycles</strong>
+    <small>Semi-local Weil quadratic form.</small>
+    <small>Description of the BC-system as the universal Witt ring (K-theory of endomorphisms) of the "algebraic closure" of the absolute base \(\mathbf F_1\). </small>
+    <small>Zeta zeros and prolate wave operators: semilocal adelic operators: introduction of a semilocal analogue of the prolate wave operator (with A. Connes and H. Moscovici). </small>
+  </div>
+  
+      </div>
+    </div>
+    <div class="branch-arrows">
+    <span class="arrow" style="transform: translateX(-102px);">↘</span>
+</div>
+ 
+  
+
+    
+
+   
+
+  <div class="graph-node object">
+    <span class="date">2026</span>
+    <strong>Jacobian of \( \operatorname{Spec}\mathbf Z \)</strong>
+<small>A bridge between algebro-geometric and adelic-analytic structures.</small>
+ <div style="height:0.8em;"></div>
+
+
+     <strong>The \(\mathbf F_1\)-arithmetic curve \((\operatorname{Spec}\mathbf Z)_{\mathbf F_1} \)</strong>
+     <small>Common geometric origin for structures that had appeared unrelated:  p-adic Hodge theory (Fargues-Fontaine curve), complex analytic geometry, and of the adelic scaling site</small>
+
+  </div>
+  </div>
+
+
+ <div class="branch-arrows">
+    <span class="arrow" style="transform: translateX(-102px);">↓</span>
+</div>
+  
+
+  <div class="current-pair">
+  <div class="graph-node current" id="current-node-left">
+    <span class="date"></span>
+    <strong>Current Directions</strong>
+    <small>Maximal abelian cover of \((\operatorname{Spec}\mathbf Z)_{\mathbf F_1}\).</small>
+  </div>
+
+  <div class="graph-node current" id="current-node">
+    <span class="date"></span>
+    <strong>Current Directions</strong>
+    <small>Zeta spectral triples: combining the infrared and ultraviolet regimes (with A. Connes and H. Moscovici).</small>
+  </div>
+</div>
+     
+      </div>
+      
+
+  
+
+</div>
+</section>
+<!--
+</section>
+<section class="card"><h2>Conceptual graph of the Research</h2>
+<div class="graph">
+  <div class="graph-node muted"><span class="date">Background</span><strong>Bost--Connes system</strong><small>early 1990s</small></div>
+  <div class="arrow">↓</div>
+  <a class="graph-node" href="bc-geometry.html"><span class="date">2008–2011</span><strong>Integral Model of the BC-System and the Study of its Geometry</strong><small>First milestone page drafted.</small></a>
+  <div class="arrow">↓</div>
+  <div class="graph-node"><span class="date">2009–2011</span><strong><a href="f1-geometry.html">First Steps toward an Arithmetic Geometry over \(\mathbf F_1\)</a></strong></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node object"><span class="date">2012–2014</span><strong>Arithmetic Site</strong><small>Points of the arithmetic topos realize the finite Riemann sector as a set.</small></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node object"><span class="date">2015–2017</span><strong>Scaling Site</strong><small>Incorporates the archimedean component and the periodic orbits \(C_p\).</small></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node"><span class="date">to refine</span><strong>Homological Algebra in Characteristic One</strong></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node"><span class="date">to refine</span><strong>Towards a Characteristic-Free Geometry</strong><small>The geometry came first; the correct algebra of functions took longer to discover.</small></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node"><span class="date">2020–2024</span><strong>Testing an Absolute Algebraic Geometry</strong></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node object"><span class="date">2026</span><strong>Jacobian of \(\operatorname{Spec}\mathbb Z\)</strong><small>Bridge between geometric and adelic descriptions.</small></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node object"><span class="date">2026</span><strong>Absolute Geometry of \(\operatorname{Spec}\mathbb Z\)</strong></div>
+  <div class="arrow">↓</div>
+  <div class="graph-node current"><span class="date">Current</span><strong>Current Directions</strong></div>
+</div>
+<p class="note">This diagram is provisional. It records the current state of the private development version and will be refined as the individual pages are written.</p>
+</section>
+-->
+
+</main><footer class="site-footer"><div class="container">© Katia Consani. Built with GitHub Pages and MathJax.</div></footer>
+<script>
+function drawSpectralCurrentArrow() {
+  const graph = document.querySelector(".graph");
+  const source = document.getElementById("spectral-node");
+  const target = document.getElementById("current-node");
+  const svg = document.getElementById("long-arrow-layer");
+  const path = document.getElementById("spectral-current-arrow");
+
+  if (!graph || !source || !target || !svg || !path) return;
+
+  const graphRect = graph.getBoundingClientRect();
+  const sourceRect = source.getBoundingClientRect();
+  const targetRect = target.getBoundingClientRect();
+
+  svg.setAttribute("viewBox", `0 0 ${graphRect.width} ${graphRect.height}`);
+
+  const startX = sourceRect.right - graphRect.left - 18;
+  const startY = sourceRect.bottom - graphRect.top;
+  const endX = targetRect.left - graphRect.left + targetRect.width * 0.72;
+  const endY = targetRect.top - graphRect.top - 15;
+
+  const c1x = startX + 180;
+const c1y = startY + 20;
+const c2x = endX + 180;
+const c2y = endY - 40;
+
+  path.setAttribute(
+    "d",
+    `M ${startX} ${startY} C ${c1x} ${c1y}, ${c2x} ${c2y}, ${endX} ${endY}`
+  );
+}
+
+window.addEventListener("load", drawSpectralCurrentArrow);
+window.addEventListener("resize", drawSpectralCurrentArrow);
+
+if (window.MathJax && window.MathJax.startup) {
+  window.MathJax.startup.promise.then(drawSpectralCurrentArrow);
+}
+</script>
+
+</body></html>
